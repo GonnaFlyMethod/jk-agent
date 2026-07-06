@@ -1,0 +1,50 @@
+<svg width="920" height="480" viewBox="0 0 920 480" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Terminal session showing JK Agent running a shell command and saving a memory">
+  <defs>
+    <linearGradient id="win" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#211530"/>
+      <stop offset="100%" stop-color="#160d22"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="920" height="480" rx="14" fill="url(#win)"/>
+  <rect x="0.5" y="0.5" width="919" height="479" rx="14" fill="none" stroke="#3a2a55"/>
+
+  <!-- titlebar -->
+  <rect width="920" height="40" rx="14" fill="#2a1c40"/>
+  <rect y="26" width="920" height="14" fill="#2a1c40"/>
+  <circle cx="26" cy="20" r="6" fill="#ff5f56"/>
+  <circle cx="48" cy="20" r="6" fill="#ffbd2e"/>
+  <circle cx="70" cy="20" r="6" fill="#27c93f"/>
+  <text x="460" y="25" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="13" fill="#9a8bb8">jk — agent session</text>
+
+  <g font-family="'JetBrains Mono',monospace" font-size="15">
+    <text x="24" y="72" fill="#ff87ff" font-weight="700">❯</text>
+    <text x="44" y="72" fill="#e8e0f7">open my notes app and find yesterday's todo list</text>
+
+    <text x="24" y="106" fill="#ffd787">⠹</text>
+    <text x="44" y="106" fill="#c9bce6">running list_processes...</text>
+
+    <text x="24" y="140" fill="#ffd787">⠼</text>
+    <text x="44" y="140" fill="#c9bce6">running shell_exec...</text>
+
+    <text x="24" y="174" fill="#87ffb3">✓</text>
+    <text x="44" y="174" fill="#8fe0a8">nohup obsidian &amp;&gt;/dev/null &amp;</text>
+
+    <!-- memory celebration banner -->
+    <text x="24" y="216" fill="#d787ff">──────────────────────────────────────────────</text>
+    <text x="24" y="240" font-weight="700" fill="#ff87ff">   🧠 ✨ MEMORY UPDATED ✨ 🧠</text>
+    <text x="24" y="264" fill="#87e0a0">   ➜ user — keeps daily todos in Obsidian, opened via GNOME</text>
+    <text x="24" y="286" fill="#d787ff">──────────────────────────────────────────────</text>
+
+    <text x="24" y="322" fill="#ff87d7">🤖</text>
+    <text x="44" y="322" fill="#e8e0f7">Obsidian is open — here's yesterday's todo list:</text>
+    <text x="44" y="346" fill="#c9bce6">  1. Ship the JK README</text>
+    <text x="44" y="368" fill="#c9bce6">  2. Review MCP server configs</text>
+    <text x="44" y="390" fill="#c9bce6">  3. Call it a day 🌙</text>
+
+    <text x="24" y="432" fill="#ff87ff" font-weight="700">❯</text>
+    <rect x="44" y="420" width="9" height="16" fill="#e8e0f7">
+      <animate attributeName="opacity" values="1;0;1" dur="1.1s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+</svg>

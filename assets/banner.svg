@@ -1,0 +1,60 @@
+<svg width="1200" height="320" viewBox="0 0 1200 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="JK — an AI agent that lives on your machine">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a0f2e"/>
+      <stop offset="55%" stop-color="#241338"/>
+      <stop offset="100%" stop-color="#150a24"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff5fd1"/>
+      <stop offset="40%" stop-color="#af5fff"/>
+      <stop offset="100%" stop-color="#5f87ff"/>
+    </linearGradient>
+    <linearGradient id="wordmark" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff87d7"/>
+      <stop offset="50%" stop-color="#d787ff"/>
+      <stop offset="100%" stop-color="#87afff"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#af5fff" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#af5fff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="320" fill="url(#bg)"/>
+
+  <g opacity="0.5">
+    <circle cx="160" cy="160" r="150" fill="url(#glow)"/>
+    <circle cx="1040" cy="160" r="150" fill="url(#glow)"/>
+  </g>
+
+  <!-- faint terminal grid dots -->
+  <g fill="#7d5fff" opacity="0.10">
+    <circle cx="40" cy="40" r="2"/><circle cx="80" cy="40" r="2"/><circle cx="120" cy="40" r="2"/>
+    <circle cx="40" cy="80" r="2"/><circle cx="80" cy="80" r="2"/><circle cx="120" cy="80" r="2"/>
+    <circle cx="1080" cy="240" r="2"/><circle cx="1120" cy="240" r="2"/><circle cx="1160" cy="240" r="2"/>
+    <circle cx="1080" cy="280" r="2"/><circle cx="1120" cy="280" r="2"/><circle cx="1160" cy="280" r="2"/>
+  </g>
+
+  <!-- mark: orbiting ring + core, echoing the CLI's braille spinner -->
+  <g transform="translate(160,160)">
+    <circle r="86" fill="none" stroke="url(#ring)" stroke-width="3" opacity="0.35"/>
+    <circle r="70" fill="none" stroke="url(#ring)" stroke-width="6" stroke-linecap="round"
+            stroke-dasharray="180 260" transform="rotate(-40)"/>
+    <circle r="50" fill="#1a0f2e" stroke="url(#ring)" stroke-width="2"/>
+    <text x="0" y="17" text-anchor="middle" font-family="'JetBrains Mono','Fira Code',monospace"
+          font-size="34" font-weight="700" fill="url(#wordmark)">JK</text>
+    <circle cx="70" cy="-38" r="6" fill="#ff87d7" filter="url(#soft)"/>
+    <circle cx="70" cy="-38" r="3.5" fill="#ffe1f5"/>
+  </g>
+
+  <!-- wordmark + tagline -->
+  <g font-family="'JetBrains Mono','Fira Code',monospace">
+    <text x="300" y="150" font-size="64" font-weight="700" fill="url(#wordmark)">JK Agent</text>
+    <text x="302" y="190" font-size="20" fill="#b9a8e0">a terminal-native AI agent with real shell access to your machine</text>
+    <text x="302" y="228" font-size="16" fill="#7d5fff">❯ shell_exec · clipboard · screenshots · MCP tools · persistent memory</text>
+  </g>
+</svg>
